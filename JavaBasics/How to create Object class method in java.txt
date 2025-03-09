@@ -1,0 +1,113 @@
+ Creating a Class, Object, Method, and Method Signature
+
+A class is a blueprint for creating objects. An object is an instance of a class. A method is a function inside a class that performs an operation. The method signature includes the method name, return type, and parameters.
+
+1.Creating a Class
+A class is a blueprint for objects. It defines properties (variables) and behaviors (methods).
+
+Class will be created using Class keyword followed by class name.
+Class name always starts with capital letter.
+The class which have main method, its name always be same as class name.
+Class consists of methods and properties.
+
+Syntax:
+ 
+class ClassName{
+
+
+  //properties and methods
+
+}
+
+example: 
+
+class Man {
+    void sayHi() {
+        System.out.println("Hi there, welcome to Java!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Man p = new Man(); 
+        p.sayHi();
+    }
+}
+
+Here, Person is a class, sayHi() is a method, and p is an object of the Person class.
+
+2. Creating an Object
+An object is an instance of a class. We use the new keyword to create an object.
+New key word used to allocate memory for the object.
+The object have class type so it is created as class name followed by object name.
+syntax:
+classname objectname = new classname();
+example:
+Man p = new Man(); 
+with object we can call methods and properties.
+for calling method we follow object.methodName();
+for calling property we use object.property;
+
+3. Creating a Method and Understanding Method Signature
+
+A method in Java is a block of code that performs a specific task. It helps in reusability and better organization of code.
+Method Signature
+The method signature includes:
+
+Method name: greet
+Return type: void (it doesn't return any value)
+Parameter list: (String name)
+
+syntax:
+
+return_type  function_Name ( parametrs....){
+
+// function body
+
+}
+
+example:
+Method with out parameters:
+
+ void greet(String name) {
+        System.out.println("Hello, " + name);
+    }
+
+Method with parameters:
+
+ int add(int a, int b) {  // Method with two parameters
+        return a + b;
+    }
+}
+
+
+Method can be called using object.methodname( param1, param2.......);
+
+
+example:
+
+class MathOperations {
+    int add(int a, int b) {  // Method with two parameters
+        return a + b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MathOperations obj = new MathOperations();
+        int sum = obj.add(10, 20); // Calling the method with arguments
+        System.out.println("Sum: " + sum);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
